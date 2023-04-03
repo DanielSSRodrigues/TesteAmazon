@@ -16,4 +16,10 @@
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="acessaSiteAmazon.cs">
+      <Generator>AssertivaAmazon</Generator>
+    </Compile>
+  </ItemGroup>
+
 </Project>
