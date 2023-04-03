@@ -29,14 +29,7 @@ namespace acessaAmazon
 
         public void TesteAcessoAmazon()
         {
-            var Command = new Comandos();   //No exemplo dado, a palavra-chave "var" está sendo usada para declarar uma nova variável chamada "command", e está sendo inicializada com uma nova instância da classe "Commands".
-            Command.AcessaAmazon(_url);
-
-            //string expectedMensagem = "Estou com sorte";
-            //Thread.Sleep(5000); // Espera 5 segundos para o navegador carregar a página
-            //string actualTitle = navegador.FindElement(By.XPath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[2]")).GetAttribute("value");
-            //actualTitle.Should().Be(expectedMensagem);
-
+            var Command = new Comandos();   // a palavra-chave "var" está sendo usada para declarar uma nova variável chamada "command"
 
         }
 
