@@ -2,8 +2,6 @@
 using OpenQA.Selenium.Chrome;
 using Xunit;
 using System;
-using FluentAssertions;
-using System.Threading;
 using TesteAmazon;
 using AcessAmazon;
 
@@ -13,9 +11,6 @@ namespace acessaAmazon
     {
         private readonly IWebDriver navegador;
         private readonly string _url;
-
-
-
         public acessaSiteAmazon()
         {
             _url = Config._url;
@@ -23,14 +18,12 @@ namespace acessaAmazon
 
         }
 
-
         [Fact]
-
-
         public void TesteAcessoAmazon()
         {
             var Command = new Comandos();   // a palavra-chave "var" está sendo usada para declarar uma nova variável chamada "command"
-
+            Command.AcessaAmazon(_url);
+           
         }
 
         public void Dispose()
